@@ -1,0 +1,103 @@
+<merge xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#fff"
+        android:id="@+id/a">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/editmenu"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/editmenu1"
+                    android:layout_marginEnd="21dp"
+                    android:layout_marginRight="21dp"
+                    android:onClick="onclickbtn"
+                    android:visibility="gone"
+                     />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Home"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:layout_alignParentStart="true"
+                    android:textSize="30sp"
+                    android:visibility="gone"
+                    android:layout_marginLeft="3dp"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/homeTxt"/>
+
+                <TextView
+                    android:id="@+id/homeTxt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+
+                    android:layout_marginLeft="3dp"
+                    android:fontFamily="@font/open_sans"
+                    android:text="Photos "
+                    android:textColor="#000"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/editmenu1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginEnd="34dp"
+                    android:layout_marginRight="34dp"
+                    android:layout_alignParentEnd="true"
+                    android:onClick="onclick"
+                    android:src="@drawable/ic_action_add" />
+
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+
+
+    </android.support.design.widget.AppBarLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_below="@+id/a">
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_alignParentStart="true"
+        app:tabIndicatorColor="#91C382"
+        >
+
+
+    </android.support.design.widget.TabLayout>
+    </RelativeLayout>
+</RelativeLayout>
+
+</merge>
